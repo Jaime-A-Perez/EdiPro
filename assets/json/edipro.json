@@ -1,0 +1,38 @@
+{
+    "appBarPage": {
+        "title": "EdiPro"
+    },
+    "sectionHero": {
+        "title": "Do you need help at home? Schedule services in a jiffy!",
+        "supportingText": "Organize your meetings by reserving common spaces, add visitors and send them invitations."
+    },
+    "Cards": [
+        {
+            "imageURL": "https://s3-alpha-sig.figma.com/img/7747/da92/0aba2486169b1d51667e1c0bde53bae8?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UVnta9bNynW3l0HVrhtck0hGHc89RFIRPCjcYLlYg7j5wY2nUwbANwxjTXIb4oBmx~CwBu5trj3tAfC1qDClWHaBDuhyRqtc8KilTksNYXTK0acWmekPp2eWVvapL6z346EVKa47S3Dc5annpdAYzuatBQ3PfpO47olOF59T0kyjD4Z8zgMplzGEaqQzWL1ZhbCC3CjENYcz4X~ksF~sF8Ho2T4ERRdOGU~6HKNpUvBPPQ-glK2lroQQ~AAGE17ts5dfBsbhBpQ8K2WE3QLBdWiAGLq4TL8a-c7UGnQZ~66DEC7sNO3Dl8onubi8VLnvL5FTjwVeOlXcDBU-E3evzQ__",
+            "icon": "",
+            "qualification": "4.9",
+            "title": "Terca Cooperativa Carpintería",
+            "subtitle": "Let's design the furniture you need to harmonize your space.",
+            "outlineButtons": [
+                ["","Furniture and shelves"],
+                ["","Wooden frames"],
+                ["","More"]
+            ]
+        },
+        {
+            "imageURL": "https://s3-alpha-sig.figma.com/img/e20e/7a8d/b7d5c5fe8ce6cf18ab12cb351db58dbc?Expires=1713744000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hYPGCWoHmeIubJjRsDCYZRqnuFlcFQFzMfobzLb0WzPS4GuFCRkXgsaftJHwu6t6~vRD3ft3A-Sh~tE69mt8Kss51NldAiXsJLt76DQiBPwAMOY402Hsz58ZIWu0RJVYQdsar25ELAFCO5fJcezIWVWW~LRpyiCtrGH6S5CREsR2mfYL-wZOBRwqXQwrDf~Acm-ooxfSmFHleRAarB-~7ZwTskUpJZenjcmmBrF-ksW6HP3dWpqiW4ghurWS1~fEAlKxwY8ZgcaEmUuC~gcD9sIYC7Lz6~FDuCXS00OKafBx6sa7fu1UYUDDCK1H1qUQqUJybceBS~t~DqZ29DkfbA__",
+        "icon": "",
+        "qualification": "4.5",
+        "title": "Carpintería Pérez",
+        "subtitle": "Team of furniture makers, carpenters and locksmiths.",
+        "outlineButtons": [
+            ["","Plumbing"],
+            ["","Locksmith"],
+            ["","Furniture assembly"],
+            ["","More"]
+        ]
+        }
+    ],
+    "filledButton": "Start today",
+    "textButton": "Maybe later, thanks"
+}
