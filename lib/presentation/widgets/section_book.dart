@@ -1,4 +1,4 @@
-import 'package:edi_pro/presentation/widgets/CustomCard/custom_card.dart';
+import 'package:edi_pro/presentation/widgets/custom_card/custom_card.dart';
 import 'package:flutter/material.dart';
 
 class SectionBook extends StatelessWidget {
