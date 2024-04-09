@@ -1,16 +1,16 @@
-import 'package:edi_pro/presentation/widgets/section_book/action_book.dart';
+import 'package:edi_pro/presentation/widgets/section_book/action_book_widget.dart';
 import 'package:edi_pro/presentation/widgets/section_book/custom_card/custom_card.dart';
 import 'package:flutter/material.dart';
 
-class SectionBook extends StatelessWidget {
-  const SectionBook({super.key});
+class SectionBookWidget extends StatelessWidget {
+  const SectionBookWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: [
         _Book(),
-        ActionBook(),
+        ActionBookWidget(),
       ],
     );
   }

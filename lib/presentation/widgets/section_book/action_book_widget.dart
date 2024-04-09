@@ -1,8 +1,8 @@
 import 'package:edi_pro/config/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
-class ActionBook extends StatelessWidget {
-  const ActionBook({super.key});
+class ActionBookWidget extends StatelessWidget {
+  const ActionBookWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

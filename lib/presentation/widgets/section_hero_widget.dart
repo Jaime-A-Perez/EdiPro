@@ -3,10 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class SectionHero extends StatelessWidget {
+class SectionHeroWidget extends StatelessWidget {
   final String title;
   final String suportingText;
-  const SectionHero({
+  const SectionHeroWidget({
     super.key, 
     required this.title, 
     required this.suportingText
