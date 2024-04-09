@@ -3,8 +3,8 @@ import 'package:edi_pro/presentation/widgets/section_book/section_book.dart';
 import 'package:edi_pro/presentation/widgets/section_hero.dart';
 import 'package:flutter/material.dart';
 
-class ShedulingServices extends StatelessWidget {
-  const ShedulingServices({super.key});
+class ShedulingServicesScreen extends StatelessWidget {
+  const ShedulingServicesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
