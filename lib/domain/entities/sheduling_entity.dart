@@ -2,23 +2,23 @@
 class ShedulingEntity {
   
   final String titleAppBar;
-  final SectionHero sectionHero;
-  final List<Card> listOfCards;
-  final Actions actions;
+  final SectionHeroEntity sectionHero;
+  final List<CardEntity> listOfCards;
+  final ActionsEntity actions;
 
   ShedulingEntity({required this.titleAppBar, required this.sectionHero, required this.listOfCards, required this.actions}); 
 }
 
-class SectionHero {
+class SectionHeroEntity {
 
   final String title;
   final String supportingText;
 
-  SectionHero({required this.title, required this.supportingText});
+  SectionHeroEntity({required this.title, required this.supportingText});
 
 }
 
-class Card {
+class CardEntity {
 
   final String imageURL;
   final String icon;
@@ -27,14 +27,14 @@ class Card {
   final String subtitle;
   final List<List<String>> outlineButtons;
 
-  Card(this.outlineButtons, {required this.imageURL, required this.icon, required this.qualification, required this.title, required this.subtitle, });
+  CardEntity({required this.imageURL, required this.icon, required this.qualification, required this.title, required this.subtitle, required this.outlineButtons });
 
 }
 
-class Actions {
+class ActionsEntity {
 
   final String filledButton;
   final String textButton;
 
-  Actions({required this.filledButton, required this.textButton});
+  ActionsEntity({required this.filledButton, required this.textButton});
 }
