@@ -12,16 +12,20 @@ class ShedulingServices extends StatelessWidget {
        appBar: AppBar(
           title:  Text('EdiPro', style: TextStyle(color: color.titles),),
         ),
-      body: _ScrollContent(colors: [color.primaryColor, Colors.white],))
+      body: _ScrollContent(
+        colors: [color.primaryColor, Colors.white],
+        dividerColor: color.dividerColor,))
     ;
   }
 }
 
 class _ScrollContent extends StatelessWidget {
   final List<Color> colors;
+  final Color dividerColor;
 
   const _ScrollContent({   
-    required this.colors,
+    required this.colors, 
+    required this.dividerColor,
   });
 
   @override
@@ -34,11 +38,16 @@ class _ScrollContent extends StatelessWidget {
             end: Alignment.bottomCenter
           ),
         ),
-        child: const Column(
+        child:  Column(
           children: [
+            // ignore: prefer_const_constructors
             SectionHero(
               title: 'Do you need help at home? \nSchedule services in a jiffy!',
               suportingText: 'Organize your meetings by reserving common spaces, add visitors and send them invitations.',
+            ),
+            Divider(
+              color: dividerColor,
+              height: 1,
             )
           ],
         ),
