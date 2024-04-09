@@ -39,19 +39,21 @@ class _ScrollContent extends StatelessWidget {
             end: Alignment.bottomCenter
           ),
         ),
-        child:  Column(
-          children: [
-            // ignore: prefer_const_constructors
-            SectionHero(
-              title: 'Do you need help at home? \nSchedule services in a jiffy!',
-              suportingText: 'Organize your meetings by reserving common spaces, add visitors and send them invitations.',
-            ),
-            Divider(
-              color: dividerColor,
-              height: 1,
-            ),
-            SectionBook(),
-          ],
+        child:  SingleChildScrollView(
+          child: Column(
+            children: [
+              // ignore: prefer_const_constructors
+              SectionHero(
+                title: 'Do you need help at home? \nSchedule services in a jiffy!',
+                suportingText: 'Organize your meetings by reserving common spaces, add visitors and send them invitations.',
+              ),
+              Divider(
+                color: dividerColor,
+                height: 1,
+              ),
+              SectionBook(),
+            ],
+          ),
         ),
       );
   }
