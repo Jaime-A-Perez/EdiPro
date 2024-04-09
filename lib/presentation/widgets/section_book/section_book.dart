@@ -1,3 +1,4 @@
+import 'package:edi_pro/presentation/widgets/section_book/action_book.dart';
 import 'package:edi_pro/presentation/widgets/section_book/custom_card/custom_card.dart';
 import 'package:flutter/material.dart';
 
@@ -6,7 +7,12 @@ class SectionBook extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return _Book();
+    return Column(
+      children: [
+        _Book(),
+        ActionBook(),
+      ],
+    );
   }
 }
 
