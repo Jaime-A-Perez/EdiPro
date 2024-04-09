@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 extension CustomColorScheme on ThemeData {
   Color get titles => const Color(0xff002733);
+  Color get titleSection => const Color(0xff001319).withOpacity(0.72);
   Color get bodyText => const Color.fromARGB(204, 0, 19, 25);
   Color get outlineButtonText => const Color(0xff004F66);
 }
@@ -25,6 +26,12 @@ class AppTheme {
         fontFamily: 'SatoshiVariable',
         fontWeight: FontWeight.w400,
         fontSize: 16
+      ),
+      titleSmall: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 18,
+        color: Color.fromARGB(183, 0, 19, 25), 
       ),
       titleMedium: TextStyle(
         fontFamily: 'SatoshiVariable',
