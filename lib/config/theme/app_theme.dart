@@ -55,6 +55,18 @@ class AppTheme {
         fontSize: 14,
         color:  Color(0xff004F66)
       ),
+      labelLarge: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 14,
+        color:  Color(0xffE5F9FF),    
+      ),
+      labelSmall: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 14,
+        color:  Color(0xff004F66)
+      ),
     )
   );
 }
