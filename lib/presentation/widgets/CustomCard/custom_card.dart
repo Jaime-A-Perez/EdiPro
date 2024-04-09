@@ -21,7 +21,7 @@ class CustomCard extends StatelessWidget {
           )],
       color:theme.cardColor,
         border: Border.all(
-          color: theme.dividerColor
+          color: theme.outlineButtonText
         )),
       height: 268,
       width: 311,
