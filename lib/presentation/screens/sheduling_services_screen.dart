@@ -1,6 +1,6 @@
 import 'package:edi_pro/config/theme/app_theme.dart';
-import 'package:edi_pro/presentation/widgets/section_book/section_book.dart';
-import 'package:edi_pro/presentation/widgets/section_hero.dart';
+import 'package:edi_pro/presentation/widgets/section_book/section_book_widget.dart';
+import 'package:edi_pro/presentation/widgets/section_hero_widget.dart';
 import 'package:flutter/material.dart';
 
 class ShedulingServicesScreen extends StatelessWidget {
@@ -43,7 +43,7 @@ class _ScrollContent extends StatelessWidget {
           child: Column(
             children: [
               // ignore: prefer_const_constructors
-              SectionHero(
+              SectionHeroWidget(
                 title: 'Do you need help at home? \nSchedule services in a jiffy!',
                 suportingText: 'Organize your meetings by reserving common spaces, add visitors and send them invitations.',
               ),
@@ -51,7 +51,7 @@ class _ScrollContent extends StatelessWidget {
                 color: dividerColor,
                 height: 1,
               ),
-              SectionBook(),
+              SectionBookWidget(),
             ],
           ),
         ),
