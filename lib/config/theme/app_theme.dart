@@ -15,6 +15,27 @@ class AppTheme {
     appBarTheme: const AppBarTheme(
       centerTitle: false,
       backgroundColor: Color(0xffE5F9FF),
+    ), textTheme: const TextTheme(
+      titleLarge: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 24
+      ),
+      bodyLarge: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w400,
+        fontSize: 16
+      ),
+      titleMedium: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 20
+      ),
+      bodyMedium: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w400,
+        fontSize: 12
+      ),
     )
   );
 }
