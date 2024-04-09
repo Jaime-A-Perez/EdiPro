@@ -14,7 +14,7 @@ class ShedulingServices extends StatelessWidget {
           title:  Text('EdiPro', style: TextStyle(color: color.titles),),
         ),
       body: _ScrollContent(
-        colors: [color.primaryColor, Colors.white],
+        colors: [color.primaryColor, color.cardColor],
         dividerColor: color.dividerColor,))
     ;
   }
