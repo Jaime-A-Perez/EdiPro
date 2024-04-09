@@ -1,4 +1,5 @@
 import 'package:edi_pro/config/theme/app_theme.dart';
+import 'package:edi_pro/presentation/widgets/section_book.dart';
 import 'package:edi_pro/presentation/widgets/section_hero.dart';
 import 'package:flutter/material.dart';
 
@@ -48,7 +49,8 @@ class _ScrollContent extends StatelessWidget {
             Divider(
               color: dividerColor,
               height: 1,
-            )
+            ),
+            SectionBook(),
           ],
         ),
       );
