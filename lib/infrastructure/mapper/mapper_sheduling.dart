@@ -11,6 +11,7 @@ class MapperSheduling {
         sectionHero: SectionHeroEntity(
           title: modelSheduling.sectionHero?.title ?? 'Title section hero', 
           supportingText: modelSheduling.sectionHero?.supportingText ?? 'supportingText section hero'), 
+          titleBook: modelSheduling.titleBook ?? 'Title of Book',
         listOfCards: modelSheduling.cards!.map((card) => CardEntity(
           outlineButtons: card.outlineButtons ?? [['Name of service']], 
           imageURL: card.imageUrl ?? '', 

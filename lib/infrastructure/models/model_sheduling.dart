@@ -7,6 +7,7 @@ ModelSheduling modelShedulingFromJson(String str) => ModelSheduling.fromJson(jso
 class ModelSheduling {
     final AppBarPage? appBarPage;
     final SectionHero? sectionHero;
+    final String? titleBook;
     final List<Card>? cards;
     final String? filledButton;
     final String? textButton;
@@ -14,6 +15,7 @@ class ModelSheduling {
     ModelSheduling({
         this.appBarPage,
         this.sectionHero,
+        this.titleBook,
         this.cards,
         this.filledButton,
         this.textButton,

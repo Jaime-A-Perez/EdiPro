@@ -13,9 +13,8 @@ class DatasourceShedulingImpl extends DatasourceSheduling {
     final String response = await rootBundle.loadString('assets/json/edipro.json');
     final data = await json.decode(response);
     
-    final ModelSheduling dataModeling = await ModelSheduling.fromJson(data);
+    final ModelSheduling dataModeling = ModelSheduling.fromJson(data);
 
-    print(dataModeling);
     return MapperSheduling.shedulingToShedulingEntity(dataModeling);
   }
 

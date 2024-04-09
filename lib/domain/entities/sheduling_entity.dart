@@ -3,10 +3,11 @@ class ShedulingEntity {
   
   final String titleAppBar;
   final SectionHeroEntity sectionHero;
+  final String titleBook;
   final List<CardEntity> listOfCards;
   final ActionsEntity actions;
 
-  ShedulingEntity({required this.titleAppBar, required this.sectionHero, required this.listOfCards, required this.actions}); 
+  ShedulingEntity({required this.titleAppBar, required this.sectionHero, required this.titleBook, required this.listOfCards, required this.actions}); 
 }
 
 class SectionHeroEntity {
