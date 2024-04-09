@@ -13,6 +13,7 @@ class AppTheme {
     useMaterial3: true,
     primaryColor: const Color(0xffE5F9FF),    
     dividerColor: const Color(0xff8E9DA4),
+    cardColor: const Color(0xffFFFFFF),
     appBarTheme: const AppBarTheme(
       centerTitle: false,
       backgroundColor: Color(0xffE5F9FF),
@@ -25,7 +26,7 @@ class AppTheme {
       bodyLarge: TextStyle(
         fontFamily: 'SatoshiVariable',
         fontWeight: FontWeight.w400,
-        fontSize: 16
+        fontSize: 16,
       ),
       titleSmall: TextStyle(
         fontFamily: 'SatoshiVariable',
