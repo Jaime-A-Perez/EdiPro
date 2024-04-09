@@ -9,7 +9,8 @@ class SectionBook extends StatelessWidget {
     return Column(
       children: [
         _TitleSectionBook(),
-        Container(          
+        Container(     
+          margin: EdgeInsets.all(8), 
           width: 670,
           height: 300,
           child: ListView.builder(
@@ -33,7 +34,7 @@ class _TitleSectionBook extends StatelessWidget {
   Widget build(BuildContext context) {
     final themeTitleSectionBook = Theme.of(context).textTheme.titleSmall;
     return  Container(
-      margin: const EdgeInsets.all(16),
+      margin: const EdgeInsets.fromLTRB(16, 16, 16, 0),
       alignment: Alignment.centerLeft,
       padding: const EdgeInsets.symmetric( vertical: 16.0, horizontal: 8),
       child: Text('Book your visit', style: themeTitleSectionBook,),
