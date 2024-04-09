@@ -4,7 +4,7 @@ extension CustomColorScheme on ThemeData {
   Color get titles => const Color(0xff002733);
   Color get titleSection => const Color(0xff001319).withOpacity(0.72);
   Color get bodyText => const Color.fromARGB(204, 0, 19, 25);
-  Color get outlineButtonText => const Color(0xff004F66);
+  Color get outlineButtonText => const Color(0xff002733).withOpacity(0.24);
 }
 
 class AppTheme {
@@ -37,12 +37,23 @@ class AppTheme {
       titleMedium: TextStyle(
         fontFamily: 'SatoshiVariable',
         fontWeight: FontWeight.w700,
-        fontSize: 20
+        fontSize: 18
+      ),
+      bodySmall: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 14
       ),
       bodyMedium: TextStyle(
         fontFamily: 'SatoshiVariable',
-        fontWeight: FontWeight.w400,
-        fontSize: 12
+        fontWeight: FontWeight.w500,
+        fontSize: 14
+      ),
+      labelMedium: TextStyle(
+        fontFamily: 'SatoshiVariable',
+        fontWeight: FontWeight.w700,
+        fontSize: 14,
+        color:  Color(0xff004F66)
       ),
     )
   );
