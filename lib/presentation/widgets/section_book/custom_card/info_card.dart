@@ -1,4 +1,4 @@
-import 'package:edi_pro/presentation/widgets/custom_card/service_chips.dart';
+import 'package:edi_pro/presentation/widgets/section_book/custom_card/service_chips.dart';
 import 'package:flutter/material.dart';
 
 class InfoCard extends StatelessWidget {

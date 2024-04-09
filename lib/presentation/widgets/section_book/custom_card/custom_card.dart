@@ -1,5 +1,5 @@
 import 'package:edi_pro/config/theme/app_theme.dart';
-import 'package:edi_pro/presentation/widgets/custom_card/info_card.dart';
+import 'package:edi_pro/presentation/widgets/section_book/custom_card/info_card.dart';
 import 'package:flutter/material.dart';
 
 class CustomCard extends StatelessWidget {
