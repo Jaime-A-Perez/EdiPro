@@ -1,4 +1,4 @@
-import 'package:edi_pro/config/theme/app_theme.dart';
+import 'package:edi_pro/presentation/widgets/custom_card.dart';
 import 'package:flutter/material.dart';
 
 class SectionBook extends StatelessWidget {
@@ -8,7 +8,8 @@ class SectionBook extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Column(
       children: [
-        _TitleSectionBook()
+        _TitleSectionBook(),
+        CustomCard(),
       ],
     );
   }
