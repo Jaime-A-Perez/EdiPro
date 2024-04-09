@@ -22,6 +22,10 @@ class InfoCard extends StatelessWidget {
             title: 'Terca Cooperativa Carpintería',
             subtitle: "Let's design the furniture you need to harmonize your space.",
           ),
+          
+          SizedBox(
+            height: 16,
+          ),
 
           ServiceChips(),
         ],

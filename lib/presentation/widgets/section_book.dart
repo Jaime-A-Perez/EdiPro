@@ -1,4 +1,4 @@
-import 'package:edi_pro/presentation/widgets/custom_card.dart';
+import 'package:edi_pro/presentation/widgets/CustomCard/custom_card.dart';
 import 'package:flutter/material.dart';
 
 class SectionBook extends StatelessWidget {
@@ -6,25 +6,34 @@ class SectionBook extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
         _TitleSectionBook(),
-        CustomCard(),
+        Container(          
+          width: 670,
+          height: 300,
+          child: ListView.builder(
+            itemCount: 2,
+            scrollDirection: Axis.horizontal,
+            itemBuilder: (BuildContext context, int index) {
+              return CustomCard();
+              },
+          ),
+        ),
       ],
     );
   }
 }
 
 class _TitleSectionBook extends StatelessWidget {
-  const _TitleSectionBook({
-    super.key,
-  });
+  const _TitleSectionBook(    
+  );
 
   @override
   Widget build(BuildContext context) {
     final themeTitleSectionBook = Theme.of(context).textTheme.titleSmall;
     return  Container(
-      margin: EdgeInsets.all(16),
+      margin: const EdgeInsets.all(16),
       alignment: Alignment.centerLeft,
       padding: const EdgeInsets.symmetric( vertical: 16.0, horizontal: 8),
       child: Text('Book your visit', style: themeTitleSectionBook,),
