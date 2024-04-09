@@ -2,7 +2,13 @@ import 'package:edi_pro/config/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 class ActionBookWidget extends StatelessWidget {
-  const ActionBookWidget({super.key});
+
+  final String textFilledButton;
+  final String textTextButton;
+  const ActionBookWidget({
+    super.key, 
+    required this.textFilledButton, 
+    required this.textTextButton});
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +16,12 @@ class ActionBookWidget extends StatelessWidget {
     final ThemeData theme = Theme.of(context);
 
     return Container(
-      margin: EdgeInsets.all(16),
+      margin: const EdgeInsets.all(16),
       child: Column(
         children: [
           _FilledButton(
             theme: theme,
-            textButton: 'Start today'
+            textButton: textFilledButton
             ),
           
           const SizedBox(
@@ -24,7 +30,7 @@ class ActionBookWidget extends StatelessWidget {
 
           _TextButton(
             theme: theme,
-            textButton: 'Maybe later, thanks',
+            textButton: textTextButton,
             )
         ],
       ),
@@ -45,6 +51,9 @@ class _TextButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextButton(
       onPressed: (){}, 
+      style: ButtonStyle(
+        minimumSize: ButtonStyleButton.allOrNull(const Size(double.infinity, 50)),
+      ),
       child: Text(textButton, style: theme.textTheme.labelSmall,)
       );
   }

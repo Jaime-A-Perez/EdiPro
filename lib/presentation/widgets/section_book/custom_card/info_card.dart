@@ -1,8 +1,14 @@
+// ignore_for_file: prefer_const_constructors
+
+import 'package:edi_pro/domain/entities/sheduling_entity.dart';
 import 'package:edi_pro/presentation/widgets/section_book/custom_card/service_chips.dart';
 import 'package:flutter/material.dart';
 
 class InfoCard extends StatelessWidget {
-  const InfoCard({super.key});
+  final CardEntity card;
+  const InfoCard({
+    super.key, 
+    required this.card});
 
   @override
   Widget build(BuildContext context) {
@@ -13,21 +19,21 @@ class InfoCard extends StatelessWidget {
         children: [
           _Ranking(
               icon: Icons.star_border_purple500_rounded,
-              qualification: '4.9',
+              qualification: card.qualification,
               style: theme.textTheme.bodySmall!,
           ),
 
           _TitleAndSubtitle(
             theme: theme.textTheme,
-            title: 'Terca Cooperativa Carpintería',
-            subtitle: "Let's design the furniture you need to harmonize your space.",
+            title: card.title,
+            subtitle: card.subtitle,
           ),
           
           SizedBox(
             height: 16,
           ),
 
-          ServiceChips(),
+          ServiceChips(outlineButtons: card.outlineButtons,),
         ],
       ),
     );
@@ -79,7 +85,7 @@ class _TitleAndSubtitle extends StatelessWidget {
             title, style: theme.titleMedium,
             textAlign: TextAlign.center
             ),
-          SizedBox(
+          const SizedBox(
             height: 6,
           ),
           Text(
